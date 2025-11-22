@@ -1,0 +1,25 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity code is
+	port(
+		clk: in std_logic;
+		keyCode: in std_logic_vector(7 downto 0);
+		code: out std_logic);
+end code;
+
+architecture code_arch of code is
+signal a:std_logic :='0';
+
+begin
+	process(clk,keyCode)
+	begin
+	if(clk'event and clk='1')then
+		if(keyCode="01000110")then
+		 a <= ~a;
+		end if;
+	end if;
+	end process;
+end code_arch;

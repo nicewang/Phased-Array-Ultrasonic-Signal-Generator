@@ -1,0 +1,273 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity xkz_a is
+	port(clk: in std_logic;
+	   s: in std_logic_vector(7 downto 0);
+		led: in std_logic;
+		z: out std_logic_vector(7 downto 0));
+end xkz_a;
+
+architecture xkz_a_arch of xkz_a is
+signal a:integer := 0;
+signal b:integer := 0;
+signal c:std_logic_vector(7 downto 0) :="00000000";
+signal d:integer :=1;
+signal e:integer :=1;
+signal g:std_logic_vector(7 downto 0) :="00000000";
+
+TYPE matrix_index is array (7 downto 0) of integer;
+signal h:matrix_index := (0,0,0,0,0,0,0,0);
+
+begin
+  
+  process(led,s)
+  begin
+	if(led='1')then
+		case s is
+		when "00110000" => d <= 1;
+		when "00110001" => d <= 2;
+		when "00110010" => d <= 3;
+		when "00110011" => d <= 4;
+		when "00110100" => d <= 5;
+		when "00110101" => d <= 6;
+		when "00110110" => d <= 7;
+		when "00110111" => d <= 8;
+		when "00111000" => d <= 9;
+		when "00111001" => d <= 10;
+		when others => d <= 1;
+		end case;
+	else
+		case s is
+		when "00110000" => e <= 1;
+		when "00110001" => e <= 2;
+		when "00110010" => e <= 3;
+		when "00110011" => e <= 4;
+		when "00110100" => e <= 5;
+		when "00110101" => e <= 6;
+		when "00110110" => e <= 7;
+		when "00110111" => e <= 8;
+		when "00111000" => e <= 9;
+		when "00111001" => e <= 10;
+		when others => e <= 1;
+		end case;
+	end if;
+  end process;
+  
+	process(clk)
+	begin
+	if(clk'event and clk='1')then
+	  a <= a+1;
+		if(a >= d)then
+			a <= 0;
+			b <= b+1;
+			c(b) <= '1';
+			if(b = 7)then
+		    b <= 0;
+			end if;
+		else
+			c(b) <= '0';
+			if(b >=1)then
+			 c(b-1) <= '0';
+			else
+			 c(7) <= '0';
+			end if;
+		end if;
+	end if;
+	end process;
+	
+	process(clk,c(0),g(0),e)
+	begin
+		if(c(0)='1' or g(0)='1')then
+			if(clk'event and clk='1')then
+				if(h(0)>=e)then
+					h(0) <= 0;
+					g(0) <= '0';
+				else
+					g(0) <= '1';
+					h(0) <= h(0)+1;
+				end if;
+			end if;
+		end if;
+	end process;
+	
+	process(clk,c(1),g(1),e)
+	begin
+		if(c(1)='1' or g(1)='1')then
+			if(clk'event and clk='1')then
+				if(h(1)>=e)then
+					h(1) <= 0;
+					g(1) <= '0';
+				else
+					g(1) <= '1';
+					h(1) <= h(1)+1;
+				end if;
+			end if;
+		end if;
+	end process;
+	
+	process(clk,c(2),g(2),e)
+	begin
+		if(c(2)='1' or g(2)='1')then
+			if(clk'event and clk='1')then
+				if(h(2)>=e)then
+					h(2) <= 0;
+					g(2) <= '0';
+				else
+					g(2) <= '1';
+					h(2) <= h(2)+1;
+				end if;
+			end if;
+		end if;
+	end process;
+	
+	process(clk,c(3),g(3),e)
+	begin
+		if(c(3)='1' or g(3)='1')then
+			if(clk'event and clk='1')then
+				if(h(3)>=e)then
+					h(3) <= 0;
+					g(3) <= '0';
+				else
+					g(3) <= '1';
+					h(3) <= h(3)+1;
+				end if;
+			end if;
+		end if;
+	end process;
+	
+	process(clk,c(4),g(4),e)
+	begin
+		if(c(4)='1' or g(4)='1')then
+			if(clk'event and clk='1')then
+				if(h(4)>=e)then
+					h(4) <= 0;
+					g(4) <= '0';
+				else
+					g(4) <= '1';
+					h(4) <= h(4)+1;
+				end if;
+			end if;
+		end if;
+	end process;
+	
+	process(clk,c(5),g(5),e)
+	begin
+		if(c(5)='1' or g(5)='1')then
+			if(clk'event and clk='1')then
+				if(h(5)>=e)then
+					h(5) <= 0;
+					g(5) <= '0';
+				else
+					g(5) <= '1';
+					h(5) <= h(5)+1;
+				end if;
+			end if;
+		end if;
+	end process;
+	
+	process(clk,c(6),g(6),e)
+	begin
+		if(c(6)='1' or g(6)='1')then
+			if(clk'event and clk='1')then
+				if(h(6)>=e)then
+					h(6) <= 0;
+					g(6) <= '0';
+				else
+					g(6) <= '1';
+					h(6) <= h(6)+1;
+				end if;
+			end if;
+		end if;
+	end process;
+	
+	process(clk,c(7),g(7),e)
+	begin
+		if(c(7)='1' or g(7)='1')then
+			if(clk'event and clk='1')then
+				if(h(7)>=e)then
+					h(7) <= 0;
+					g(7) <= '0';
+				else
+					g(7) <= '1';
+					h(7) <= h(7)+1;
+				end if;
+			end if;
+		end if;
+	end process;
+	
+	process(g(0))
+	begin
+		if(g(0) = '1')then
+			z(0) <= '1';
+		else
+			z(0) <= '0';
+		end if;
+	end process;
+	
+	process(g(1))
+	begin
+		if(g(1) = '1')then
+			z(1) <= '1';
+		else
+			z(1) <= '0';
+		end if;
+	end process;
+	
+	process(g(2))
+	begin
+		if(g(2) = '1')then
+			z(2) <= '1';
+		else
+			z(2) <= '0';
+		end if;
+	end process;
+	
+	process(g(3))
+	begin
+		if(g(3) = '1')then
+			z(3) <= '1';
+		else
+			z(3) <= '0';
+		end if;
+	end process;
+	
+	process(g(4))
+	begin
+		if(g(4) = '1')then
+			z(4) <= '1';
+		else
+			z(4) <= '0';
+		end if;
+	end process;
+	
+	process(g(5))
+	begin
+		if(g(5) = '1')then
+			z(5) <= '1';
+		else
+			z(5) <= '0';
+		end if;
+	end process;
+	
+	process(g(6))
+	begin
+		if(g(6) = '1')then
+			z(6) <= '1';
+		else
+			z(6) <= '0';
+		end if;
+	end process;
+	
+	process(g(7))
+	begin
+		if(g(7) = '1')then
+			z(7) <= '1';
+		else
+			z(7) <= '0';
+		end if;
+	end process;
+	
+end xkz_a_arch;

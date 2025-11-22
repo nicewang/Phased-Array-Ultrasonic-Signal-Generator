@@ -1,0 +1,22 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity switch is
+	port(
+		s: in std_logic_vector(7 downto 0);
+		led: out std_logic;
+end switch;
+
+architecture switch_arch of switch is
+begin
+	process(s)
+	begin
+		if(s="01100001")then
+			led <= '1';
+		elsif(s="01100010")then
+			led <= '0';
+		end if;
+	end process;
+end switch_arch;

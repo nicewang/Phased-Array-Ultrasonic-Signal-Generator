@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'sys_clk'
+Slack : -7.146
+TNS   : -2071.014
+
+Type  : Slow 1200mV 85C Model Setup 'key_debounce:key_debounce|led_out'
+Slack : -4.811
+TNS   : -274.264
+
+Type  : Slow 1200mV 85C Model Setup 'receive:receive|i[0]'
+Slack : -2.085
+TNS   : -83.739
+
+Type  : Slow 1200mV 85C Model Hold 'receive:receive|i[0]'
+Slack : -0.067
+TNS   : -0.067
+
+Type  : Slow 1200mV 85C Model Hold 'sys_clk'
+Slack : 0.431
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'key_debounce:key_debounce|led_out'
+Slack : 0.537
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -697.429
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'receive:receive|i[0]'
+Slack : 0.248
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'key_debounce:key_debounce|led_out'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'sys_clk'
+Slack : -6.739
+TNS   : -1894.953
+
+Type  : Slow 1200mV 0C Model Setup 'key_debounce:key_debounce|led_out'
+Slack : -4.247
+TNS   : -246.169
+
+Type  : Slow 1200mV 0C Model Setup 'receive:receive|i[0]'
+Slack : -1.989
+TNS   : -83.207
+
+Type  : Slow 1200mV 0C Model Hold 'receive:receive|i[0]'
+Slack : 0.062
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'key_debounce:key_debounce|led_out'
+Slack : 0.316
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'sys_clk'
+Slack : 0.381
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -697.429
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'receive:receive|i[0]'
+Slack : 0.029
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'key_debounce:key_debounce|led_out'
+Slack : 0.224
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'sys_clk'
+Slack : -2.491
+TNS   : -746.216
+
+Type  : Fast 1200mV 0C Model Setup 'key_debounce:key_debounce|led_out'
+Slack : -2.070
+TNS   : -80.472
+
+Type  : Fast 1200mV 0C Model Setup 'receive:receive|i[0]'
+Slack : -0.415
+TNS   : -10.645
+
+Type  : Fast 1200mV 0C Model Hold 'receive:receive|i[0]'
+Slack : 0.033
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'sys_clk'
+Slack : 0.065
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'key_debounce:key_debounce|led_out'
+Slack : 0.278
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'sys_clk'
+Slack : -3.000
+TNS   : -508.662
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'receive:receive|i[0]'
+Slack : 0.270
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'key_debounce:key_debounce|led_out'
+Slack : 0.324
+TNS   : 0.000
+
+------------------------------------------------------------
