@@ -1,7 +1,0 @@
-
-State Machine - |uart_top|ir_hwx:ir_hwx|state
-Name state.ReceiveCode state.Lead_4ms state.Lead_9ms state.Idle 
-state.Idle 0 0 0 0 
-state.Lead_9ms 0 0 1 1 
-state.Lead_4ms 0 1 0 1 
-state.ReceiveCode 1 0 0 1 
