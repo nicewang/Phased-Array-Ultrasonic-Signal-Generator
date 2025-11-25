@@ -1,2 +1,2 @@
 ## Phased Array Ultrasonic Signal Generator
-Bachelor's thesis, not yet reorganized.
+Bachelor's thesis at HHU, not yet reorganized.
