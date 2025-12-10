@@ -1,23 +1,36 @@
 ## Phased Array Ultrasonic Signal Generator
 Bachelor's thesis at HHU in 2015, partly reorganized in 2025.
 
+* [Real-World Final Product](#6-final-product-demonstration) and [Real-World Experiments](#5-real-world-acoustic-experiments)
 * Hardware: Cyclone IV E (Altera)
 * Package Structure:
 
 ```
 ${project_workspace}/
-├── /
-│   ├── 
-│   └── /
-│       ├── 
-│       ├── 
-│       ├── 
-├── 
-├── 
-├── 
+├── xkz/
+│   ├── xkz 
+│   ├── xkz_a               // simplified
+│   ├── xkz_b               // improved 
+│── uart_top/
+│   ├── uart_top
+│   ├── uart_top_1_digital
+│   ├── uart_top_1_digital_pll
+│   ├── uart_top_pll(not 10ms)
+│   ├── uart_top(10ms)
+├── testbench/              // testbench
+│   ├── xkz_test
+│   ├── xkz_test1
+│   ├── xkz_test2
+│   ├── xkz_test3
+│   ├── xkz_test4
+│   ├── xkz_test5
+│   ├── xkz_test6
+│   ├── xkz_test7
+├── hnq
+├── firmware
+├── assets                  // figures in README
 └── README.md               
 ```
-* [Real-World Final Product](#6-final-product-demonstration) and [Real-World Experiments](#5-real-world-acoustic-experiments)
 
 ### 0. Abstract
 ### 1. Simplified Phased Array Ultrasound Signal Generator System
