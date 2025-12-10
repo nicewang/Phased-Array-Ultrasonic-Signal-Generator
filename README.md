@@ -1,7 +1,6 @@
 ## Phased Array Ultrasonic Signal Generator
 Bachelor's thesis at HHU in 2015, partly reorganized in 2025.
-### Abstract
-### 0. Hardware and Package Structure
+
 * Hardware: Cyclone IV E (Altera)
 * Package Structure:
 
@@ -18,6 +17,9 @@ ${project_workspace}/
 ├── 
 └── README.md               
 ```
+* [Real-World Final Product](#6-final-product-demonstration) and [Real-World Experiments](#5-real-world-acoustic-experiments)
+
+### 0. Abstract
 ### 1. Simplified Phased Array Ultrasound Signal Generator System
 #### 1.1 Functional Block Diagram
 ![Functional Block Diagram of Simplified Phased Array Ultrasound Signal Generator System-1](assets/fig_1.png)
@@ -229,3 +231,5 @@ ModelSim Simulation Waveforms
 ### 6. Final Product Demonstration
 #### 6.1 Phase and Pulse Width Modulation (Simplified Phased Array Ultrasound Signal Generator)
 [Full Video](https://www.youtube.com/watch?v=729Rt35hbVc)
+#### 6.2 Pulse Width Modulation (Improved Phased Array Ultrasound Signal Generator)
+[Full Video](https://www.youtube.com/watch?v=Vnu9PueqiJU)
