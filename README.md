@@ -115,7 +115,8 @@ The figure below shows the Register Transfer Level (RTL) diagram of the entire s
 
 #### 1.4 Control Terminal
 ##### 1.4.1 Host Computer and Serial Communication Module
-See [there]().
+See [there](#5-real-world-acoustic-experiments
+).
 
 ### 2. Improved Phased Array Ultrasound Signal Generator System
 #### 2.1 Functional Block Diagram
