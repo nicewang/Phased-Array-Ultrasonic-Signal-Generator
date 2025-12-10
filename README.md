@@ -225,3 +225,7 @@ ModelSim Simulation Waveforms
 * Pulse Transmitted by Transducer Excited by a Pulse with a Period of 1ms and a Pulse Width of 200ns:
 ![exp_pm_1ms_1](assets/exp_pm_1ms_1.png)
 ![exp_pm_1ms_2](assets/exp_pm_1ms_2.png)
+
+### 6. Final Product Demonstration
+#### 6.1 Phase and Pulse Width Modulation (Simplified Phased Array Ultrasound Signal Generator)
+[Full Video](https://www.youtube.com/watch?v=729Rt35hbVc)
