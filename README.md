@@ -117,6 +117,41 @@ The figure below shows the Register Transfer Level (RTL) diagram of the entire s
 ##### 1.4.1 Host Computer and Serial Communication Module
 See [there](https://github.com/nicewang/Phased-Array-Ultrasonic-Signal-Generator/tree/gui#gui
 ).
+##### 1.4.2 Infrared Remote Control Module
+![infrared](assets/infrared.png)
+
+* The infrared remote controller of this signal generator system uses the `UPD6122` infrared encoding chip.
+* It uses the NEC encoding format, with a frequency $f=\mathbf{38kHz}$ and a standard transmission distance of approximately 8 meters.
+* Data Format of Infrared Remote Controller:
+![infrared_2](assets/infrared_2.png)
+* Relationship between keyCode and Flag Bit led\_2:
+
+| keyCode (Hexadecimal) | Flag Bit led\_2 |
+| :---: | :---: |
+| 45 | 11 |
+| 47 | 00 |
+| Others | 01 |
+
+
+* Relationship between keyCode and $s$:
+
+| keyCode (Hexadecimal) | s |
+| :---: | :---: |
+| 45 | 00110000 |
+| 47 | 00110000 |
+| 16 | 00110001 |
+| 0C | 00110001 |
+| 18 | 00110010 |
+| 5E | 00110011 |
+| 08 | 00110100 |
+| 1C | 00110101 |
+| 5A | 00110110 |
+| 42 | 00110111 |
+| 52 | 00111000 |
+| 4A | 00111001 |
+
+* The state machine of infrared remote controller is as following:
+![infrared_state_machine](assets/infrared_state_machine.png)
 
 ### 2. Improved Phased Array Ultrasound Signal Generator System
 #### 2.1 Functional Block Diagram
