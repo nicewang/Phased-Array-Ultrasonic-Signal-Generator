@@ -60,7 +60,7 @@ ${project_workspace}/
 ![phy_setup_1](assets/phy_setup_1.png)
 ![phy_setup_2](assets/phy_setup_2.png)
 #### 5.2 Acoustic Experiment Waveforms
-* Pulse Transmitted by Transducer Excited by a Pulse with a Period of 500$\mu$s and a Pulse Width of 200ns:
+* Pulse Transmitted by Transducer Excited by a Pulse with a Period of $500\mus$ and a Pulse Width of 200ns:
 ![exp_pm_500us_1](assets/exp_pm_500us_1.png)
 ![exp_pm_500us_2](assets/exp_pm_500us_2.png)
 * Pulse Transmitted by Transducer Excited by a Pulse with a Period of 1ms and a Pulse Width of 200ns:
