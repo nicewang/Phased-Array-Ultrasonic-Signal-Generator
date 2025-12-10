@@ -25,8 +25,39 @@ ${project_workspace}/
 * `xkz_a` is the core generator module realized by VHDL/Verilog:
 ![Functional Block Diagram of Simplified Phased Array Ultrasound Signal Generator System-2](assets/fig_2.png)
 
-#### 1.2 Simulation Diagram (Waveform)
+#### 1.2 Control Signals
+* ASCII Codes of 13 Control Signals for Simplified Phased Array Ultrasound Signal Generator:
 
+| Character Symbol | ASCII Code (Decimal) | ASCII Code (Binary) |
+| :--- | :---: | :---: |
+| **0** | **48** | **00110000** |
+| **1** | **49** | **00110001** |
+| **2** | **50** | **00110010** |
+| **3** | **51** | **00110011** |
+| **4** | **52** | **00110100** |
+| **5** | **53** | **00110101** |
+| **6** | **54** | **00110110** |
+| **7** | **55** | **00110111** |
+| **8** | **56** | **00111000** |
+| **9** | **57** | **00111001** |
+| **a** | **97** | **01100001** |
+| **b** | **98** | **01100010** |
+| **c** | **99** | **01100011** |
+
+* Relationship between 8-bit Input $s$ and Phase Modulation Count $d$:
+
+| 8-bit Input $s$ | Phase Modulation Count $d$ |
+| :---: | :---: |
+| 00110000 | 1 |
+| 00110001 | 2 |
+| 00110010 | 3 |
+| 00110011 | 4 |
+| 00110100 | 5 |
+| 00110101 | 6 |
+| 00110110 | 7 |
+| 00110111 | 8 |
+| 00111000 | 9 |
+| 00111001 | 10 |
 
 ### 2. Improved Phased Array Ultrasound Signal Generator System
 #### 2.1 Functional Block Diagram
@@ -60,7 +91,7 @@ ${project_workspace}/
 ![phy_setup_1](assets/phy_setup_1.png)
 ![phy_setup_2](assets/phy_setup_2.png)
 #### 5.2 Acoustic Experiment Waveforms
-* Pulse Transmitted by Transducer Excited by a Pulse with a Period of $500\mus$ and a Pulse Width of 200ns:
+* Pulse Transmitted by Transducer Excited by a Pulse with a Period of 500μs and a Pulse Width of 200ns:
 ![exp_pm_500us_1](assets/exp_pm_500us_1.png)
 ![exp_pm_500us_2](assets/exp_pm_500us_2.png)
 * Pulse Transmitted by Transducer Excited by a Pulse with a Period of 1ms and a Pulse Width of 200ns:
