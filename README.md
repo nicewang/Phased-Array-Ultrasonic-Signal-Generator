@@ -166,17 +166,17 @@ See [there](https://github.com/nicewang/Phased-Array-Ultrasonic-Signal-Generator
 
 ##### 1.3.3 Control Priority
 
-A control priority issue exists between the two control terminals. The design of the Simplified Phased Array Ultrasonic Signal Generator System includes two control terminals: the **Host Computer (PC)** and the **Infrared Remote (IR) Controler**. The control priority of the Host Computer is <font color=red>$higher$</font> than that of the Infrared Remote Controller. A HDL program module named `switch` ($cf.$ [$Sec 1.4$](#14-fpga-implementation-and-rtl)) is responsible for implementing this priority logic using `if-else` statements:
+A control priority issue exists between the two control terminals. The design of the Simplified Phased Array Ultrasonic Signal Generator System includes two control terminals: the **Host Computer (PC)** and the **Infrared Remote (IR) Controler**. The control priority of the Host Computer is <font color=red>$higher$</font> than that of the Infrared Remote Controller. A HDL program module named `switch` ($cf.$ [*Sec 1.4*](#14-fpga-implementation-and-rtl)) is responsible for implementing this priority logic using `if-else` statements:
 
-- **High Priority - Host Computer:** The possible outputs from the host computer module include numeric characters `'0'` through `'9'` and lowercase letters `'a'`, `'b'`, and `'c'`. Using `if-else` statements, the control of the `led_2` flag bit ($cf.$ [$Sec 1.4$](#14-fpga-implementation-and-rtl)) is assigned to the host computer when it outputs numeric characters `'0'` ~ `'9'` and letters `'a'` and `'b'`.
-	- The `Open Serial Port` button ($cf.$ [$GUI$](https://github.com/nicewang/Phased-Array-Ultrasonic-Signal-Generator/tree/gui#gui
+- **High Priority - Host Computer:** The possible outputs from the host computer module include numeric characters `'0'` through `'9'` and lowercase letters `'a'`, `'b'`, and `'c'`. Using `if-else` statements, the control of the `led_2` flag bit ($cf.$ [*Sec 1.4*](#14-fpga-implementation-and-rtl)) is assigned to the host computer when it outputs numeric characters `'0'` ~ `'9'` and letters `'a'` and `'b'`.
+	- The `Open Serial Port` button ($cf.$ [*GUI*](https://github.com/nicewang/Phased-Array-Ultrasonic-Signal-Generator/tree/gui#gui
 )) does more than just opening the port; it simultaneously sends the character `'a'` to enter the host computer mode. 
-	- The `Close Serial Port` button ($cf.$ [$GUI$](https://github.com/nicewang/Phased-Array-Ultrasonic-Signal-Generator/tree/gui#gui
+	- The `Close Serial Port` button ($cf.$ [*GUI*](https://github.com/nicewang/Phased-Array-Ultrasonic-Signal-Generator/tree/gui#gui
 )) not only closes the port but also sends the character `'c'` -> Control Authority Handover.
 
-- **Switch Flag:** When the host computer outputs the character `'b'`, the control of the `led_2` flag bit ($cf.$ [$Sec 1.4$](#14-fpga-implementation-and-rtl)) is handed over to the infrared remote controller.
+- **Switch Flag:** When the host computer outputs the character `'b'`, the control of the `led_2` flag bit ($cf.$ [*Sec 1.4*](#14-fpga-implementation-and-rtl)) is handed over to the infrared remote controller.
 
--  **Handover to Infrared Remote Controller:** When clicking the `Close Serial Port` button ($cf.$ [$GUI$](https://github.com/nicewang/Phased-Array-Ultrasonic-Signal-Generator/tree/gui#gui
+-  **Handover to Infrared Remote Controller:** When clicking the `Close Serial Port` button ($cf.$ [*GUI*](https://github.com/nicewang/Phased-Array-Ultrasonic-Signal-Generator/tree/gui#gui
 )), the control authority is handovered to the infrared remote control terminal.
 
 In summarization, the host computer terminal maintains a higher priority over the two control terminals.
