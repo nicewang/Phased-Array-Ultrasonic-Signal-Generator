@@ -289,11 +289,11 @@ ModelSim Simulation Waveforms
 ModelSim Simulation Waveforms
 ##### 4.2.1 Generating Single Pulse with Adjustable Pulse Width via Single Pin
 * Pulse Width Modulation Simulation Diagram (40ns phase-modulation interval, single pulse output per pin):
-![pwm_improv_1](pwm_improv_1.png)
+![pwm_improv_1](assets/pwm_improv_1.png)
 
 ##### 4.2.2 Generating Pulse Sequence with Adjustable Number of Pulses via Single Pin
 * Pulse Width Modulation Simulation Diagram (40ns phase-modulation interval, a narrow pulse sequence transmitted by single pin):
-![pwm_improv_2](pwm_improv_2.png)
+![pwm_improv_2](assets/pwm_improv_2.png)
 
 ### 5. Real-World Acoustic Experiments
 #### 5.1 Physical Setup
