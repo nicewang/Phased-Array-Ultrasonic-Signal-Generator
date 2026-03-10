@@ -34,6 +34,13 @@ ${project_workspace}/
 ```
 
 ### 0. Abstract
+With the rapid advancement of non-destructive detection technology in recent years, phased-array ultrasonic imaging has been increasingly adopted across various industrial sectors. This research focuses on the operating principles and implementation of a phased-array ultrasonic signal generator, specifically investigating excitation signal amplification and the propagation characteristics of ultrasonic waves in different media. The system utilizes an FPGA development board as the core processor, integrated with a MOSFET-based inverting circuit and a transformer as the amplification stage to form a complete ultrasonic signal generator for flaw detection.
+
+A design scheme is implemented with the FPGA as the primary controller, utilizing a host computer and an infrared (IR) remote as control interfaces for managing phase delay and pulse width across 8 output channels. Compared to other processors like ARM, the FPGA-based approach offers superior precision and resolution in phase and pulse-width modulation. The excitation signal generation module offers two configurations: a basic scheme, where both the host computer and IR remote (with lower priority) provide unified modulation for all 8 channels; and an improved scheme, controlled solely by the host computer, which allows independent modulation for each of the 8 channels. Unlike the basic model that only supports beam steering, the improved generator enables synthetic beam focusing. For signal amplification, the MOSFET inverters are connected to an adjustable power supply to generate negative pulses, which are then boosted via a transformer to amplify the 3.3V FPGA output to over 100V, meeting the excitation requirements of the transducers.
+
+To verify the practical utility of the generator, acoustic experiments were conducted to analyze the propagation characteristics of high-power ultrasonic waves in various media, and predictions for ultrasonic signal focusing were performed.
+
+Experiments results demonstrate that the proposed signal generator system fully meets all design specifications, successfully achieving 8-channel phase/pulse-width modulation and high-power amplification. The system holds significant practical value. This project explored multiple design iterations in FPGA logic and power circuitry, accumulating substantial empirical data through acoustic experiments and establishing a solid foundation for further research.
 ### 1. Simplified Phased Array Ultrasound Signal Generator System
 #### 1.1 Functional Block Diagram
 ![Functional Block Diagram of Simplified Phased Array Ultrasound Signal Generator System-1](assets/fig_1.png)
