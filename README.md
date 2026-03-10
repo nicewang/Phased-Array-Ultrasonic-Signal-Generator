@@ -238,6 +238,9 @@ The core processor of the Improved Phased Array Ultrasonic Signal Generator Syst
 * PCB Layout of Adjustable Vcc Circuit:
 ![vcc_pcb](assets/vcc_pcb.png)
 
+#### 3.1 MOSFET Inverter Circuit
+![mosfet](assets/mosfet.png)
+
 ### 4. Simulation Diagram (Waveform)
 ModelSim Simulation Waveforms
 #### 4.1 Simplified Phased Array Ultrasound Signal Generator
