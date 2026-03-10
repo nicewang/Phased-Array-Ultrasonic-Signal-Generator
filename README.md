@@ -190,6 +190,23 @@ The figure below shows the Register Transfer Level (RTL) diagram of the entire s
 #### 2.1 Functional Block Diagram
 ![Functional Block Diagram of Improved Phased Array Ultrasound Signal Generator System](assets/fig_3.png)
 
+#### 2.2 Control Signals
+
+* Relationship between Pulse Width Mode, Pulse Width Count $e(i)$, and the pplicable Transducer Center Frequency for the Pulse
+
+| Pulse Width Mode | Pulse Width Count $e(i)$ | Applicable Transducer Center Frequency |
+| :---: | :---: | :---: |
+| 0 | 250 | 100 kHz |
+| 1 | 125 | 200 kHz |
+| 2 | 100 | 250 kHz |
+| 3 | 62 | 400 kHz |
+| 4 | 50 | 500 kHz |
+| 5 | 31 | 800 kHz |
+| 6 | 25 | 1000 kHz |
+| 7 | 20 | 1250 kHz |
+| 8 | 12 | 2000 kHz |
+| 9 | 10 | 2500 kHz |
+
 ### 3. Peripheral Circuit Module Design
 #### 3.1 Amplification Circuit
 * Schematic Diagram of Adjustable Vcc Core Circuit:
