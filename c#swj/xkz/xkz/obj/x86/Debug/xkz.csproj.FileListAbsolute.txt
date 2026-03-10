@@ -1,8 +1,0 @@
-G:\c#swj\xkz\xkz\bin\Debug\xkz.exe
-G:\c#swj\xkz\xkz\bin\Debug\xkz.pdb
-G:\c#swj\xkz\xkz\obj\x86\Debug\xkz.csprojResolveAssemblyReference.cache
-G:\c#swj\xkz\xkz\obj\x86\Debug\xkz.Form1.resources
-G:\c#swj\xkz\xkz\obj\x86\Debug\xkz.Properties.Resources.resources
-G:\c#swj\xkz\xkz\obj\x86\Debug\xkz.csproj.GenerateResource.Cache
-G:\c#swj\xkz\xkz\obj\x86\Debug\xkz.exe
-G:\c#swj\xkz\xkz\obj\x86\Debug\xkz.pdb
