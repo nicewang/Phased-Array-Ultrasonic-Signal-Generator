@@ -192,7 +192,7 @@ The figure below shows the Register Transfer Level (RTL) diagram of the entire s
 
 #### 2.2 Control Signals
 
-* Relationship between Pulse Width Mode, Pulse Width Count $e(i)$, and the pplicable Transducer Center Frequency for the Pulse
+* Relationship between Pulse Width Mode, Pulse Width Count $e(i)$, and the Aplicable Transducer Center Frequency for the Pulse
 
 | Pulse Width Mode | Pulse Width Count $e(i)$ | Applicable Transducer Center Frequency |
 | :---: | :---: | :---: |
@@ -206,6 +206,28 @@ The figure below shows the Register Transfer Level (RTL) diagram of the entire s
 | 7 | 20 | 1250 kHz |
 | 8 | 12 | 2000 kHz |
 | 9 | 10 | 2500 kHz |
+
+#### 2.3 Control Terminal
+##### 2.3.1 Host Computer and Serial Communication Control Module
+See [there](https://github.com/nicewang/Phased-Array-Ultrasonic-Signal-Generator/tree/gui#gui
+).
+##### 2.3.2 LED Indicator
+
+* Relationship between LED1/LED2 Status, System Mode, and Single Output Terminal Pulse Status
+
+| LED1 | LED2 | System Mode | Single Output Terminal Transmission Pulse Width Status |
+| :--- | :--- | :--- | :--- |
+| Off | Off | Phase Modulation | Single Pulse |
+| Off | On | Phase Modulation | Narrow Pulse Sequence |
+| On | Off | Pulse Width Modulation | Single Pulse |
+| On | On | Pulse Width Modulation | Narrow Pulse Sequence |
+
+#### 2.4 PLL Frequency Multiplication
+
+The core processor of the Improved Phased Array Ultrasonic Signal Generator System is also based on an Altera Cyclone IV E series FPGA. This series features two integrated Phase-Locked Loops (PLLs). During the design and development, we utilized the corresponding IP cores for frequency multiplication of the internal crystal oscillator. By shortening the input clock period, this approach provides the signal generator with finer phase-modulation precision:
+![pll_1](assets/pll_1.png)
+![pll_2](assets/pll_2.png)
+![pll_3](assets/pll_3.png)
 
 ### 3. Peripheral Circuit Module Design
 #### 3.1 Amplification Circuit
