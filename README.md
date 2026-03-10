@@ -309,6 +309,11 @@ ModelSim Simulation Waveforms
 * Pulse Transmitted by Transducer Excited by a Pulse with a Period of 1ms and a Pulse Width of 200ns:
 ![exp_pm_1ms_1](assets/exp_pm_1ms_1.png)
 ![exp_pm_1ms_2](assets/exp_pm_1ms_2.png)
+* An FPGA-generated pulse signal with a 10ms period and a 5μs duration, and the distorted signal after the Phase-Locked Loop (PLL):
+![fpga_out](assets/fpga_out.png)
+![fpga_out_pll](assets/fpga_out_pll.png)
+* Waveform of the pulse transmitted through a flawed cementitious medium (flaw detection signal, excited by a pulse with a 10ms period and 5μs pulse width)::
+![flaw](assets/flaw.png)
 
 ### 6. Final Product Demonstration
 #### 6.1 Phase and Pulse Width Modulation (Simplified Phased Array Ultrasound Signal Generator)
