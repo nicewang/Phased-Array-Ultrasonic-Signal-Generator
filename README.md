@@ -1,5 +1,5 @@
 ## Phased Array Ultrasonic Signal Generator
-Bachelor's thesis at HHU in 2015, partly reorganized in 2025.
+Bachelor's thesis at HHU in 2015, [2025.12 to 2026.03].
 
 * [Real-World Final Product](#6-final-product-demonstration) and [Real-World Experiments](#5-real-world-acoustic-experiments)
 * Hardware: Cyclone IV E (Altera)
@@ -40,7 +40,8 @@ A design scheme is implemented with the FPGA as the primary controller, utilizin
 
 To verify the practical utility of the generator, acoustic experiments were conducted to analyze the propagation characteristics of high-power ultrasonic waves in various media, and predictions for ultrasonic signal focusing were performed.
 
-Experiments results demonstrate that the proposed signal generator system fully meets all design specifications, successfully achieving 8-channel phase/pulse-width modulation and high-power amplification. The system holds significant practical value. This project explored multiple design iterations in FPGA logic and power circuitry, accumulating substantial empirical data through acoustic experiments and establishing a solid foundation for further research.
+Experiment results demonstrate that the proposed signal generator system fully meets all design specifications, successfully achieving 8-channel phase/pulse-width modulation and high-power amplification. The system holds significant practical value. This project explored multiple design iterations in FPGA logic and power circuitry, accumulating substantial empirical data through acoustic experiments and establishing a solid foundation for further research.
+
 ### 1. Simplified Phased Array Ultrasound Signal Generator System
 #### 1.1 Functional Block Diagram
 ![Functional Block Diagram of Simplified Phased Array Ultrasound Signal Generator System-1](assets/fig_1.png)
