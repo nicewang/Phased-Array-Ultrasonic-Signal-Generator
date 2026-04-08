@@ -3,7 +3,7 @@ Bachelor's thesis at HHU in 2015, [2025.12 to 2026.03].
 
 * [Real-World Final Product](#6-final-product-demonstration) and [Real-World Experiments](#5-real-world-acoustic-experiments)
 * Hardware: Cyclone IV E (Altera)
-* [Chinese Dissertation Slide](https://github.com/nicewang/Phased-Array-Ultrasonic-Signal-Generator/tree/slides_cn)
+* [Chinese Thesis Defense Slide](https://github.com/nicewang/Phased-Array-Ultrasonic-Signal-Generator/tree/slides_cn)
 * Package Structure:
 
 ```
